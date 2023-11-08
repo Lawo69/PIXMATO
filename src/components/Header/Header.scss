@@ -37,6 +37,7 @@
         .center {
             font-size: 22px;
             font-weight: 700;
+            letter-spacing: 5px;
             cursor: pointer;
             span {
                 color: #fae400;
@@ -52,6 +53,7 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            padding-right: 50px;
             @include md {
                 gap: 25px;
             }
