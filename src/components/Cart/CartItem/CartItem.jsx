@@ -1,5 +1,5 @@
 import { MdClose } from "react-icons/md";
-import prod from "../../../assets/products/earbuds-prod-1.webp";
+import prod from "../../../assets/products/movie-1.png";
 
 import "./CartItem.scss";
 const CartItem = () => {

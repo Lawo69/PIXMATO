@@ -9,7 +9,7 @@ import {
     FaPinterest,
     FaCartPlus,
 } from "react-icons/fa";
-import prod from "../../assets/products/earbuds-prod-1.webp";
+import prod from "../../assets/products/movie-1.png";
 
 const SingleProduct = () => {
     return (
