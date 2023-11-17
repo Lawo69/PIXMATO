@@ -9,13 +9,16 @@ import { fetchDataFromApi } from "../../utils/api";
 
 const Home = () => {
 
+
     useEffect (() => {
-        getCategories()
-    }, [])
+        getCategories();
+    }, []);
+
 
     const getCategories = () => {
-        fetchDataFromApi("/api/categories?populate=*").then((res) => console.log(res));
+        fetchDataFromApi("/api/categories").then(res => console.log(res));
     };
+    
 
     return (
         <div className="home">
