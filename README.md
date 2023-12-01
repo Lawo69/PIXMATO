@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+The Tech Mentor University web page project. It's created by HTML, CSS, and Js. This project serves as the official web page for Tech Mentor University, providing students and visitors with access to course details, university news, offers, contact information, and registration details.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
