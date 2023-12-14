@@ -1,7 +1,6 @@
 # Getting Started with Create React App
 
-The Tech Mentor University web page project. It's created by HTML, CSS, and Js. This project serves as the official web page for Tech Mentor University, providing students and visitors with access to course details, university news, offers, contact information, and registration details.
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PIXMATO, is your e-commerce destination for exquisite wall art. Immerse yourself in a seamless shopping experience powered by ReactJS and SCSS. Explore our collection, where creativity meets craftsmanship, on a visually stunning website designed for PIXMATO.
 
 ## Available Scripts
 
