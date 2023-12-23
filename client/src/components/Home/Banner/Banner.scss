@@ -3,7 +3,9 @@
 .hero-banner {
     padding: 40px;
     position: relative;
-    background-image: linear-gradient(to right,#fae400,#fac000);
+    background-image: url(../../../assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     @include md {
         height: calc(100vh - 80px);
     }
@@ -37,7 +39,7 @@
             }
         }
         .text-content {
-            color: black;
+            color: #212121;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -97,11 +99,11 @@
                     font-size: 13px;
                     font-weight: 500;
                     //width: fit-content;
-                    border: 2px solid black;
+                    border: 2px solid #212121;
                     padding: 10px 20px;
                     cursor: pointer;
                     &.v2 {
-                        background-color: black;
+                        background-color: #212121;
                         color: white;
                     }
                     &:hover {

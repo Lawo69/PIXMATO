@@ -13,12 +13,14 @@ import {
 import useFatch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
 import { Context } from "../../utils/context";
+import { useNavigate } from "react-router-dom";
 
 const SingleProduct = () => {
     const [quantity, setQuantity] = useState(1);
     const { id } = useParams();
     const { data } = useFatch(`/api/products?populate=*&[filters][id]=${id}`);
-    const { handleAddToCart } = useContext(Context)
+    const { handleAddToCart } = useContext(Context);
+    const navigate = useNavigate();
 
     const increment = () => {
         setQuantity((prevState) => prevState + 1);
@@ -66,7 +68,7 @@ const SingleProduct = () => {
                         <div className="info-item">
                             <span className="text-bold">
                                 Category:{' '}
-                                <span> {product.categories.data[0].attributes.title}</span>
+                                <span onClick={() => navigate(`/category/${product.categories.data[0].id}`)}> {product.categories.data[0].attributes.title}</span>
                             </span>
                             <span className="text-bold">
                                 Share:

@@ -1,10 +1,7 @@
 @import "../../../css-config/mixins.scss";
 
 .shop-by-category {
-    margin: 25px 0;
-    @include md {
-        margin: 50px 0;
-    }
+    margin: 5%;
     .categories {
         display: flex;
         flex-flow: wrap;
