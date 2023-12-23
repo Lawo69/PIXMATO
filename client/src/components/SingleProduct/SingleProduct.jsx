@@ -1,5 +1,5 @@
 import "./SingleProduct.scss";
-import { useState, useContext } from "react";
+
 import RelatedProducts from "./RelatedProducts/RelatedProducts";
 import {
     FaFacebookF,
@@ -9,6 +9,7 @@ import {
     FaPinterest,
     FaCartPlus,
 } from "react-icons/fa";
+<<<<<<< HEAD
 
 import useFatch from "../../hooks/useFetch";
 import { useParams } from "react-router-dom";
@@ -35,29 +36,31 @@ const SingleProduct = () => {
 
     if(!data) return;
     const product = data.data[0].attributes;
+=======
+import prod from "../../assets/products/movie-1.png";
+
+const SingleProduct = () => {
+>>>>>>> parent of f760eb8 (shopping cart add)
     return (
         <div className="single-product-main-content">
             <div className="layout">
                 <div className="single-product-page">
                     <div className="left">
-                        <img src={"http://localhost:1337" + product.img.data[0].attributes.url} alt="" />
+                        <img src={prod} alt="" />
                     </div>
                     <div className="right">
-                        <span className="name">{product.title}</span>
-                        <span className="price">Rs.{product.price}.00</span>
-                        <span className="desc">{product.desc}</span>
+                        <span className="name">Product name</span>
+                        <span className="price">Price</span>
+                        <span className="desc">Product description</span>
                     
 
                         <div className="cart-buttons">
                             <div className="quantity-buttons">
-                                <span onClick={decrement}>-</span>
-                                <span>{quantity}</span>
-                                <span onClick={increment}>+</span>
+                                <span>-</span>
+                                <span>5</span>
+                                <span>+</span>
                             </div>
-                            <button className="add-to-cart-button" onClick={() => {
-                                handleAddToCart(data.data[0], quantity);
-                                setQuantity(1);
-                            }}>
+                            <button className="add-to-cart-button">
                                 <FaCartPlus size={20} />
                                 ADD TO CART
                             </button>
@@ -67,8 +70,13 @@ const SingleProduct = () => {
 
                         <div className="info-item">
                             <span className="text-bold">
+<<<<<<< HEAD
                                 Category:{' '}
                                 <span onClick={() => navigate(`/category/${product.categories.data[0].id}`)}> {product.categories.data[0].attributes.title}</span>
+=======
+                                Category:
+                                <span>Headphones</span>
+>>>>>>> parent of f760eb8 (shopping cart add)
                             </span>
                             <span className="text-bold">
                                 Share:
@@ -84,7 +92,7 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-            <RelatedProducts productId={id} categoryId={product.categories.data[0].id} />
+            <RelatedProducts />
         </div>
     )
 };
